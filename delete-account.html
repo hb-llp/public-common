@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Delete Account | Special Sathi</title>
+
+  <meta
+    name="description"
+    content="Learn how to delete, restore, or deactivate your Special Sathi account and understand how associated data is handled."
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f9fb;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #e21b2b, #c91424);
+      color: #fff;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 15px;
+      background: #fff;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e21b2b;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+      border: 1px solid #eee;
+    }
+
+    .card h2 {
+      color: #e21b2b;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      color: #444;
+      font-size: 17px;
+      margin: 20px 0 10px;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 14px 15px 14px 55px;
+      margin-bottom: 12px;
+      background: #fff5f6;
+      border-radius: 10px;
+      border-left: 4px solid #e21b2b;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 14px;
+      top: 12px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #e21b2b;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .notice {
+      background: #fff5f6;
+      border: 1px solid #f3b7bd;
+      border-left: 5px solid #e21b2b;
+      padding: 18px 20px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    .notice strong {
+      color: #c91424;
+    }
+
+    .warning {
+      background: #fff8e8;
+      border: 1px solid #f0d28a;
+      border-left: 5px solid #e3a400;
+      padding: 18px 20px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    .warning strong {
+      color: #a36f00;
+    }
+
+    .success {
+      background: #eefaf2;
+      border: 1px solid #b9dfc4;
+      border-left: 5px solid #2e8b57;
+      padding: 18px 20px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    .success strong {
+      color: #247447;
+    }
+
+    .timeline {
+      margin-top: 20px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 18px 20px 18px 70px;
+      margin-bottom: 15px;
+      background: #fafafa;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    .timeline-number {
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #e21b2b;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 6px;
+      color: #333;
+      font-size: 17px;
+    }
+
+    .deactivation {
+      background: #f7f7f7;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .footer strong {
+      color: #e21b2b;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 35px 18px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .container {
+        margin: 20px auto;
+        padding: 0 14px;
+      }
+
+      .card {
+        padding: 22px 18px;
+        border-radius: 13px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .steps li {
+        padding-left: 52px;
+      }
+
+      .timeline-item {
+        padding-left: 62px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+
+    <div class="logo">
+      SS
+    </div>
+
+    <h1>Account &amp; Data Deletion</h1>
+
+    <p>Special Sathi</p>
+
+  </header>
+
+
+  <main class="container">
+
+
+    <!-- Introduction -->
+    <section class="card">
+
+      <h2>Account &amp; Data Deletion</h2>
+
+      <p>
+        Special Sathi respects your privacy and provides users with the
+        ability to delete their account and associated personal data.
+      </p>
+
+      <p>
+        <strong>Last Updated:</strong> September 22, 2026
+      </p>
+
+    </section>
+
+
+    <!-- How to Delete -->
+    <section class="card">
+
+      <h2>How to Delete Your Account</h2>
+
+      <p>
+        You can request deletion of your Special Sathi account directly
+        from the mobile application.
+      </p>
+
+      <h3>Steps to request account deletion:</h3>
+
+      <ol class="steps">
+
+        <li>
+          Open the <strong>Special Sathi</strong> app.
+        </li>
+
+        <li>
+          Go to your <strong>Profile</strong>.
+        </li>
+
+        <li>
+          Open <strong>Settings</strong>.
+        </li>
+
+        <li>
+          Select <strong>Delete Account</strong>.
+        </li>
+
+        <li>
+          Review the information displayed on the confirmation screen.
+        </li>
+
+        <li>
+          Confirm that you want to delete your account.
+        </li>
+
+      </ol>
+
+    </section>
+
+
+    <!-- 7 Day Deletion Period -->
+    <section class="card">
+
+      <h2>7-Day Account Restoration Period</h2>
+
+      <p>
+        When you request account deletion, your account enters a
+        <strong>7-day deletion period</strong>.
+      </p>
+
+      <p>
+        During this period, your account is pending permanent deletion.
+        You have the opportunity to restore your account if you change
+        your mind.
+      </p>
+
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <div class="timeline-number">1</div>
+
+          <h3>Deletion Requested</h3>
+
+          <p>
+            Your account is marked for deletion after you confirm the
+            delete account request.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-number">2</div>
+
+          <h3>Within 7 Days</h3>
+
+          <p>
+            You can sign in and use the available
+            <strong>Restore Account</strong> option to cancel the
+            pending deletion and reactivate your account.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-number">3</div>
+
+          <h3>After 7 Days</h3>
+
+          <p>
+            If you do not restore your account within the 7-day period,
+            your account will be permanently deleted.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="warning">
+
+        <strong>Important:</strong>
+
+        After the 7-day restoration period has ended and permanent
+        deletion has been completed, the account cannot be restored
+        through the application's account restoration process.
+
+      </div>
+
+    </section>
+
+
+    <!-- Data Deleted -->
+    <section class="card">
+
+      <h2>Data That Will Be Deleted</h2>
+
+      <p>
+        After the 7-day deletion period, when permanent deletion is
+        completed, the following account-associated personal data will
+        be deleted, subject to applicable legal, security and regulatory
+        requirements:
+      </p>
+
+      <ul>
+
+        <li>
+          Mobile number and account information
+        </li>
+
+        <li>
+          Name and basic profile information
+        </li>
+
+        <li>
+          Date of birth, gender, education and occupation information
+        </li>
+
+        <li>
+          Matrimony and profile details
+        </li>
+
+        <li>
+          Profile photographs
+        </li>
+
+        <li>
+          Location information associated with your account
+        </li>
+
+        <li>
+          Uploaded identity and disability verification documents
+        </li>
+
+        <li>
+          Account-related preferences and settings
+        </li>
+
+        <li>
+          Other personal information associated with your account
+        </li>
+
+      </ul>
+
+      <div class="success">
+
+        <strong>Permanent Deletion:</strong>
+
+        Once the 7-day restoration period has ended, the account and
+        associated personal data will be permanently deleted, except
+        information that is required to be retained for legitimate
+        legal, security, fraud-prevention or regulatory purposes.
+
+      </div>
+
+    </section>
+
+
+    <!-- Retained Data -->
+    <section class="card">
+
+      <h2>Data That May Be Retained</h2>
+
+      <p>
+        Certain information may be retained for a limited period where
+        necessary for legitimate purposes, including:
+      </p>
+
+      <ul>
+
+        <li>
+          Legal or regulatory compliance
+        </li>
+
+        <li>
+          Fraud prevention and security
+        </li>
+
+        <li>
+          Resolving disputes
+        </li>
+
+        <li>
+          Enforcing our terms and policies
+        </li>
+
+        <li>
+          Maintaining necessary technical or security records
+        </li>
+
+      </ul>
+
+      <p>
+        Any retained information will be kept only for as long as
+        reasonably necessary for the applicable purpose and will be
+        deleted or anonymized when it is no longer required.
+      </p>
+
+    </section>
+
+
+    <!-- Account Deactivation -->
+    <section class="card">
+
+      <h2>Account Deactivation</h2>
+
+      <div class="deactivation">
+
+        <p>
+          If you do not want to permanently delete your account,
+          Special Sathi also provides an
+          <strong>Account Deactivation</strong> option.
+        </p>
+
+        <p>
+          Deactivation is different from account deletion.
+          A deactivated account is temporarily disabled and may be
+          reactivated according to the available reactivation process.
+        </p>
+
+        <p>
+          Deactivation does not start the 7-day permanent account
+          deletion process unless you separately choose the
+          <strong>Delete Account</strong> option.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Unable to Access -->
+    <section class="card">
+
+      <h2>Unable to Access the App?</h2>
+
+      <p>
+        If you cannot access your Special Sathi account and need to
+        request account deletion, please contact the Special Sathi
+        support team through the contact or support information
+        provided by Special Sathi.
+      </p>
+
+      <p>
+        You may be asked to provide sufficient information to verify
+        account ownership before a deletion request can be processed.
+      </p>
+
+      <div class="notice">
+
+        <strong>Security Notice:</strong>
+
+        Never send your password, OTP, or other authentication
+        credentials when requesting account deletion.
+
+      </div>
+
+    </section>
+
+
+    <!-- Privacy Policy -->
+    <section class="card">
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        For more information about how Special Sathi collects, uses,
+        stores and protects personal information, please refer to the
+        <strong>Special Sathi Privacy Policy</strong>.
+      </p>
+
+    </section>
+
+
+    <!-- Important Information -->
+    <section class="card">
+
+      <h2>Important Information</h2>
+
+      <p>
+        Account deletion is a permanent action after the 7-day
+        restoration period has ended.
+      </p>
+
+      <p>
+        If you restore your account during the 7-day period, the pending
+        deletion request will be cancelled and your account can continue
+        to be used according to the application's available features.
+      </p>
+
+      <p>
+        After permanent deletion has been completed, the account cannot
+        be recovered through the account restoration process.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <footer class="footer">
+
+    <p>
+      &copy; 2026 <strong>Special Sathi</strong>. All rights reserved.
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
