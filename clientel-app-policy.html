@@ -1,65 +1,541 @@
-Privacy Policy
-Effective date: 16 October 2026 Last updated: 16 October 2026
-1. Introduction
-Clientel (“we,” “our,” or “us”) provides a software platform that helps clinics, hospitals, and other healthcare providers manage appointment-related communications through the WhatsApp Business Platform.
-This Privacy Policy explains how we collect, use, store, disclose, and protect personal information when you use our website, software, and related services.
-2. Information We Collect
-Depending on how you use our services, we may collect the following information:
-* Business account information: Clinic or hospital name, business contact details, and account configuration.
-* User information: Names, email addresses, phone numbers, login details, and information about authorized staff using our platform.
-* WhatsApp integration information: WhatsApp Business Account identifiers, phone number identifiers, business profile details, authorization tokens, and integration status.
-* Appointment and notification information: Patient names, phone numbers, appointment dates and times, reminder status, and notification delivery records, where provided by the healthcare provider.
-* Technical information: IP addresses, browser information, device details, system logs, and diagnostic data.
-* Support communications: Information you provide when contacting us for assistance.
-We aim to collect only information reasonably necessary to provide and maintain our services.
-3. How We Use Information
-We may use information to:
-* Provide and operate our software platform.
-* Connect customer business accounts to the WhatsApp Business Platform.
-* Send appointment reminders and other notifications requested by authorized healthcare providers.
-* Track message submission, delivery, failure, and other available status events.
-* Maintain account security and prevent misuse.
-* Troubleshoot technical issues and improve our services.
-* Respond to customer support requests.
-* Comply with applicable legal obligations.
-We do not use patient information for our own advertising purposes.
-4. Healthcare Provider Responsibilities
-Clinics, hospitals, and other healthcare providers using our platform are responsible for determining the lawful basis for processing patient information, obtaining any required permissions or consent, and ensuring that their communications comply with applicable laws and WhatsApp policies.
-Healthcare providers should avoid sending sensitive medical information through notifications unless they have determined that doing so is appropriate and legally permitted.
-Our platform is intended to support healthcare providers' communication workflows. Unless separately agreed in writing, we do not provide medical care or act as a healthcare provider.
-5. WhatsApp and Third-Party Services
-Our platform may integrate with the WhatsApp Business Platform and other third-party service providers.
-When a healthcare provider connects its WhatsApp Business Account, information may be processed by Meta and WhatsApp in accordance with their applicable terms and privacy policies.
-We may also use third-party providers for hosting, database services, security, monitoring, and technical support. These providers may process information on our behalf under appropriate contractual or other safeguards.
-We do not control the independent privacy practices of third-party services.
-6. How We Share Information
-We may share information:
-* With the clinic, hospital, or business that uses our platform.
-* With Meta and WhatsApp as needed to provide messaging functionality.
-* With service providers that help us operate and secure our platform.
-* When required by law, regulation, legal process, or a valid government request.
-* To investigate fraud, protect our rights, or help protect the safety and security of our users.
-We do not sell personal information to third parties.
-7. Data Retention
-We retain personal information for as long as reasonably necessary to provide our services, maintain operational records, resolve disputes, meet legal obligations, and enforce our agreements.
-Retention periods may vary according to the type of information, customer configuration, applicable law, and legitimate operational requirements.
-When information is no longer required, we will take reasonable steps to delete it or otherwise dispose of it securely, subject to applicable retention obligations and backups.
-8. Data Security
-We use reasonable technical and organizational measures designed to protect personal information against unauthorized access, loss, alteration, disclosure, and misuse.
-These measures may include access controls, authentication, encryption where appropriate, secure credential handling, and system monitoring.
-No method of storage or transmission can be guaranteed to be completely secure.
-9. Your Privacy Rights
-Depending on applicable law, individuals may have rights to request access to, correction of, deletion of, or restrictions on the processing of their personal information.
-Patients whose information is provided by a clinic or hospital should generally contact that healthcare provider first regarding their information.
-Business customers and authorized platform users may contact us using the details below to submit privacy-related requests. We may need to verify identity and authority before responding.
-10. International Data Transfers
-Depending on the infrastructure and third-party providers used, information may be processed or stored in countries other than the country where it was collected. Where required, we will take appropriate steps to support lawful international transfers.
-11. Children's Privacy
-Our platform is designed for use by businesses and their authorized staff, not directly by children. Healthcare providers remain responsible for ensuring that any patient information involving children is handled in accordance with applicable law.
-12. Changes to This Policy
-We may update this Privacy Policy from time to time. We will publish the updated version on this page and revise the “Last updated” date. Where required by law, we will provide additional notice of material changes.
-13. Contact Us
-For privacy questions or requests, contact:
-Company: Clientel Email: office@clienteltech.com 
-Website: https://clienteltech.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Privacy Policy — Clientel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --surface: #ffffff;
+      --border: #e4e8ef;
+      --accent: #2563EB;
+      --accent-light: #eff4ff;
+      --text-primary: #111827;
+      --text-secondary: #4b5563;
+      --text-muted: #9ca3af;
+      --number: #dbeafe;
+      --number-text: #1d4ed8;
+      --tag-bg: #f0fdf4;
+      --tag-text: #15803d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --border: #21262d;
+        --accent: #58a6ff;
+        --accent-light: #1c2a3a;
+        --text-primary: #e6edf3;
+        --text-secondary: #8b949e;
+        --text-muted: #484f58;
+        --number: #1c2a3a;
+        --number-text: #58a6ff;
+        --tag-bg: #0d2818;
+        --tag-text: #3fb950;
+      }
+    }
 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 52px 24px 40px;
+    }
+    .hero-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .meta-row span strong {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* ── Layout ── */
+    .layout {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 680px) {
+      .layout { grid-template-columns: 1fr; }
+      .toc { display: none; }
+    }
+
+    /* ── TOC ── */
+    .toc {
+      position: sticky;
+      top: 72px;
+    }
+    .toc-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .toc ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc a {
+      display: block;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+      line-height: 1.4;
+    }
+    .toc a:hover {
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    /* ── Sections ── */
+    .policy-body {
+      min-width: 0;
+    }
+    .section {
+      margin-bottom: 48px;
+      scroll-margin-top: 72px;
+    }
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .section-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--number);
+      color: var(--number-text);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.3;
+      letter-spacing: -0.2px;
+    }
+    .section p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      max-width: 68ch;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* lists */
+    .policy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .policy-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .policy-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 8px;
+    }
+
+    /* callout */
+    .callout {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .callout strong { color: var(--text-primary); }
+
+    /* divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 0 48px;
+    }
+
+    /* contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+    .contact-row .cl {
+      width: 80px;
+      flex-shrink: 0;
+      font-weight: 500;
+      color: var(--text-muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-row a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact-row a:hover { text-decoration: underline; }
+
+    /* footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="https://clienteltech.com">Clientel</a>
+    <span class="badge">Privacy Policy</span>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <div class="meta-row">
+      <span><strong>Effective:</strong> 16 October 2026</span>
+      <span><strong>Last updated:</strong> 16 October 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main layout -->
+<div class="layout">
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="Table of contents">
+    <p class="toc-label">Contents</p>
+    <ul>
+      <li><a href="#s1">1. Introduction</a></li>
+      <li><a href="#s2">2. Information We Collect</a></li>
+      <li><a href="#s3">3. How We Use Information</a></li>
+      <li><a href="#s4">4. Healthcare Provider Responsibilities</a></li>
+      <li><a href="#s5">5. WhatsApp & Third-Party Services</a></li>
+      <li><a href="#s6">6. How We Share Information</a></li>
+      <li><a href="#s7">7. Data Retention</a></li>
+      <li><a href="#s8">8. Data Security</a></li>
+      <li><a href="#s9">9. Your Privacy Rights</a></li>
+      <li><a href="#s10">10. International Data Transfers</a></li>
+      <li><a href="#s11">11. Children's Privacy</a></li>
+      <li><a href="#s12">12. Changes to This Policy</a></li>
+      <li><a href="#s13">13. Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Policy body -->
+  <main class="policy-body">
+
+    <section class="section" id="s1">
+      <div class="section-header">
+        <span class="section-num">1</span>
+        <h2>Introduction</h2>
+      </div>
+      <p>Clientel ("we," "our," or "us") provides a software platform that helps clinics, hospitals, and other healthcare providers manage appointment-related communications through the WhatsApp Business Platform.</p>
+      <p>This Privacy Policy explains how we collect, use, store, disclose, and protect personal information when you use our website, software, and related services.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s2">
+      <div class="section-header">
+        <span class="section-num">2</span>
+        <h2>Information We Collect</h2>
+      </div>
+      <p>Depending on how you use our services, we may collect the following information:</p>
+      <ul class="policy-list">
+        <li><strong>Business account information:</strong>&nbsp;Clinic or hospital name, business contact details, and account configuration.</li>
+        <li><strong>User information:</strong>&nbsp;Names, email addresses, phone numbers, login details, and information about authorized staff using our platform.</li>
+        <li><strong>WhatsApp integration information:</strong>&nbsp;WhatsApp Business Account identifiers, phone number identifiers, business profile details, authorization tokens, and integration status.</li>
+        <li><strong>Appointment and notification information:</strong>&nbsp;Patient names, phone numbers, appointment dates and times, reminder status, and notification delivery records, where provided by the healthcare provider.</li>
+        <li><strong>Technical information:</strong>&nbsp;IP addresses, browser information, device details, system logs, and diagnostic data.</li>
+        <li><strong>Support communications:</strong>&nbsp;Information you provide when contacting us for assistance.</li>
+      </ul>
+      <p>We aim to collect only information reasonably necessary to provide and maintain our services.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s3">
+      <div class="section-header">
+        <span class="section-num">3</span>
+        <h2>How We Use Information</h2>
+      </div>
+      <p>We may use information to:</p>
+      <ul class="policy-list">
+        <li>Provide and operate our software platform.</li>
+        <li>Connect customer business accounts to the WhatsApp Business Platform.</li>
+        <li>Send appointment reminders and other notifications requested by authorized healthcare providers.</li>
+        <li>Track message submission, delivery, failure, and other available status events.</li>
+        <li>Maintain account security and prevent misuse.</li>
+        <li>Troubleshoot technical issues and improve our services.</li>
+        <li>Respond to customer support requests.</li>
+        <li>Comply with applicable legal obligations.</li>
+      </ul>
+      <div class="callout"><strong>Note:</strong> We do not use patient information for our own advertising purposes.</div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s4">
+      <div class="section-header">
+        <span class="section-num">4</span>
+        <h2>Healthcare Provider Responsibilities</h2>
+      </div>
+      <p>Clinics, hospitals, and other healthcare providers using our platform are responsible for determining the lawful basis for processing patient information, obtaining any required permissions or consent, and ensuring that their communications comply with applicable laws and WhatsApp policies.</p>
+      <p>Healthcare providers should avoid sending sensitive medical information through notifications unless they have determined that doing so is appropriate and legally permitted.</p>
+      <p>Our platform is intended to support healthcare providers' communication workflows. Unless separately agreed in writing, we do not provide medical care or act as a healthcare provider.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s5">
+      <div class="section-header">
+        <span class="section-num">5</span>
+        <h2>WhatsApp &amp; Third-Party Services</h2>
+      </div>
+      <p>Our platform may integrate with the WhatsApp Business Platform and other third-party service providers.</p>
+      <p>When a healthcare provider connects its WhatsApp Business Account, information may be processed by Meta and WhatsApp in accordance with their applicable terms and privacy policies.</p>
+      <p>We may also use third-party providers for hosting, database services, security, monitoring, and technical support. These providers may process information on our behalf under appropriate contractual or other safeguards.</p>
+      <div class="callout">We do not control the independent privacy practices of third-party services.</div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s6">
+      <div class="section-header">
+        <span class="section-num">6</span>
+        <h2>How We Share Information</h2>
+      </div>
+      <p>We may share information:</p>
+      <ul class="policy-list">
+        <li>With the clinic, hospital, or business that uses our platform.</li>
+        <li>With Meta and WhatsApp as needed to provide messaging functionality.</li>
+        <li>With service providers that help us operate and secure our platform.</li>
+        <li>When required by law, regulation, legal process, or a valid government request.</li>
+        <li>To investigate fraud, protect our rights, or help protect the safety and security of our users.</li>
+      </ul>
+      <div class="callout"><strong>We do not sell personal information to third parties.</strong></div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s7">
+      <div class="section-header">
+        <span class="section-num">7</span>
+        <h2>Data Retention</h2>
+      </div>
+      <p>We retain personal information for as long as reasonably necessary to provide our services, maintain operational records, resolve disputes, meet legal obligations, and enforce our agreements.</p>
+      <p>Retention periods may vary according to the type of information, customer configuration, applicable law, and legitimate operational requirements.</p>
+      <p>When information is no longer required, we will take reasonable steps to delete it or otherwise dispose of it securely, subject to applicable retention obligations and backups.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s8">
+      <div class="section-header">
+        <span class="section-num">8</span>
+        <h2>Data Security</h2>
+      </div>
+      <p>We use reasonable technical and organizational measures designed to protect personal information against unauthorized access, loss, alteration, disclosure, and misuse.</p>
+      <p>These measures may include access controls, authentication, encryption where appropriate, secure credential handling, and system monitoring.</p>
+      <div class="callout">No method of storage or transmission can be guaranteed to be completely secure.</div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s9">
+      <div class="section-header">
+        <span class="section-num">9</span>
+        <h2>Your Privacy Rights</h2>
+      </div>
+      <p>Depending on applicable law, individuals may have rights to request access to, correction of, deletion of, or restrictions on the processing of their personal information.</p>
+      <p>Patients whose information is provided by a clinic or hospital should generally contact that healthcare provider first regarding their information.</p>
+      <p>Business customers and authorized platform users may contact us using the details below to submit privacy-related requests. We may need to verify identity and authority before responding.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s10">
+      <div class="section-header">
+        <span class="section-num">10</span>
+        <h2>International Data Transfers</h2>
+      </div>
+      <p>Depending on the infrastructure and third-party providers used, information may be processed or stored in countries other than the country where it was collected. Where required, we will take appropriate steps to support lawful international transfers.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s11">
+      <div class="section-header">
+        <span class="section-num">11</span>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>Our platform is designed for use by businesses and their authorized staff, not directly by children. Healthcare providers remain responsible for ensuring that any patient information involving children is handled in accordance with applicable law.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s12">
+      <div class="section-header">
+        <span class="section-num">12</span>
+        <h2>Changes to This Policy</h2>
+      </div>
+      <p>We may update this Privacy Policy from time to time. We will publish the updated version on this page and revise the "Last updated" date. Where required by law, we will provide additional notice of material changes.</p>
+    </section>
+
+    <hr />
+
+    <section class="section" id="s13">
+      <div class="section-header">
+        <span class="section-num">13</span>
+        <h2>Contact Us</h2>
+      </div>
+      <p>For privacy questions or requests, please reach out to us:</p>
+      <div class="contact-card">
+        <div class="contact-row">
+          <span class="cl">Company</span>
+          <span>Clientel</span>
+        </div>
+        <div class="contact-row">
+          <span class="cl">Email</span>
+          <a href="mailto:office@clienteltech.com">office@clienteltech.com</a>
+        </div>
+        <div class="contact-row">
+          <span class="cl">Website</span>
+          <a href="https://clienteltech.com" target="_blank" rel="noopener">clienteltech.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  &copy; 2026 <a href="https://clienteltech.com">Clientel</a>. All rights reserved.
+</footer>
+
+</body>
+</html>
