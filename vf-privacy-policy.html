@@ -1,133 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Vijaya Foods - Privacy Policy</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vijaya Foods - Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2933;
+    --muted: #5f6b76;
+    --accent: #1b5e48;
+    --border: #d9e0e5;
+    --head-bg: #eef5f2;
+    --note-bg: #f1f8f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181b;
+      --text: #e4e9ec;
+      --muted: #9aa6af;
+      --accent: #5fc2a0;
+      --border: #2e373d;
+      --head-bg: #1d2a25;
+      --note-bg: #1a2723;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      color: #e21b2b;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 28px;
-      color: #333;
-    }
-
-    p, li {
-      font-size: 15px;
-    }
-
-    ul {
-      padding-left: 25px;
-    }
-
-    .updated {
-      color: #666;
-      font-size: 14px;
-    }
-
-    .highlight {
-      background: #fff4f4;
-      border-left: 4px solid #e21b2b;
-      padding: 12px 15px;
-      margin: 20px 0;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 15px 0;
-      font-size: 14px;
-    }
-
-    .scroll {
-      overflow-x: auto;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 9px 11px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: #fff4f4;
-    }
-
-    .footer {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 0;
-        border-radius: 0;
-        padding: 20px;
-      }
-    }
-  </style>
-
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main { max-width: 800px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+  .updated { color: var(--muted); margin: 0 0 24px; font-size: 0.95rem; }
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; }
+  th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--head-bg); }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); padding-top: 16px; }
+</style>
 </head>
-
 <body>
-
-  <div class="container">
+<main>
 
 <h1>Vijaya Foods - Privacy Policy</h1>
+<p class="updated">Last updated: October 17, 2026</p>
 
-<p class="updated">
-  Last updated: October 14, 2026
-</p>
+<p>Vijaya Foods ("we", "our", or "us") respects your privacy and is committed to protecting your personal and business information. This Privacy Policy explains how information is collected, used, stored, and protected when you use the Vijaya Foods mobile application (PWA) and website.</p>
 
-<p>
-  Vijaya Foods ("we", "our", or "us") respects your privacy and is
-  committed to protecting your personal and business information. This
-  Privacy Policy explains how information is collected, used, stored, and
-  protected when you use the Vijaya Foods mobile application (PWA) and
-  website.
-</p>
-
-<div class="highlight">
-  <strong>Important:</strong>
-  Vijaya Foods is a business application for managing the food supply
-  chain. It is used by Admins, Superstockists, Distributors, Salesmen and
-  Shops to manage users, products, stock, ledgers and orders.
+<div class="note">
+  <strong>Important:</strong> Vijaya Foods is a business application for managing the food supply chain. It is used by Admins, Superstockists, Distributors, Salesmen and Shops to manage users, products, stock, ledgers and orders.
 </div>
 
 <h2>1. Information We Collect</h2>
-
-<p>
-  Depending on your role and how you use the application, we may collect
-  the following information:
-</p>
-
+<p>Depending on your role and how you use the application, we may collect the following information:</p>
 <ul>
   <li>Name, mobile phone number, email address and login credentials.</li>
   <li>Your role in the application (Admin, Superstockist, Distributor, Salesman or Shop).</li>
@@ -141,110 +82,38 @@
 </ul>
 
 <h2>2. User Roles and Access</h2>
-
-<p>
-  Vijaya Foods provides role-based access. What you can see and do in the
-  application depends on your role.
-</p>
-
-<div class="scroll">
+<p>Vijaya Foods provides role-based access. What you can see and do in the application depends on your role.</p>
+<div class="table-wrap">
 <table>
   <thead>
     <tr><th>Role</th><th>What this role can do</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Admin</td>
-      <td>
-        View the list of all users. Add, update and delete products.
-        Add, update and delete Superstockists. View Distributors,
-        Salesmen and Shops.
-      </td>
-    </tr>
-    <tr>
-      <td>Superstockist</td>
-      <td>
-        Add, update and delete records within the permissions given by
-        the application. Create and manage stock and ledger entries.
-      </td>
-    </tr>
-    <tr>
-      <td>Distributor</td>
-      <td>
-        Receive orders from Salesmen. Manage records, stock and ledger
-        entries within the permissions given by the application.
-      </td>
-    </tr>
-    <tr>
-      <td>Salesman</td>
-      <td>
-        Receive orders from Shops and send those orders to the
-        Distributor. Manage records within the permissions given by the
-        application.
-      </td>
-    </tr>
-    <tr>
-      <td>Shop</td>
-      <td>Place orders with the Salesman and view its own orders and details.</td>
-    </tr>
+    <tr><td>Admin</td><td>View the list of all users. Add, update and delete products. Add, update and delete Superstockists. View Distributors, Salesmen and Shops.</td></tr>
+    <tr><td>Superstockist</td><td>Add, update and delete records within the permissions given by the application. Create and manage stock and ledger entries.</td></tr>
+    <tr><td>Distributor</td><td>Receive orders from Salesmen. Manage records, stock and ledger entries within the permissions given by the application.</td></tr>
+    <tr><td>Salesman</td><td>Receive orders from Shops and send those orders to the Distributor. Manage records within the permissions given by the application.</td></tr>
+    <tr><td>Shop</td><td>Place orders with the Salesman and view its own orders and details.</td></tr>
   </tbody>
 </table>
 </div>
-
-<p>
-  Information you add is visible to other users only as needed for their
-  role and for the business relationship in the application.
-</p>
+<p>Information you add is visible to other users only as needed for their role and for the business relationship in the application.</p>
 
 <h2>3. Orders and Order Flow</h2>
-
-<p>
-  A Shop places an order with its Salesman through the application. The
-  Salesman reviews the order and sends it to the Distributor.
-  Order information, including shop details, items, quantities and status,
-  is shared between these users so that the order can be processed and
-  delivered.
-</p>
+<p>A Shop places an order with its Salesman through the application. The Salesman reviews the order and sends it to the Distributor. Order information, including shop details, items, quantities and status, is shared between these users so that the order can be processed and delivered.</p>
 
 <h2>4. Stock and Ledger</h2>
-
-<p>
-  Authorized users can create and manage stock and ledger records.
-  This data is used to track inventory, payments, dues and balances
-  between the parties involved, and is visible only to users who are
-  authorized to view it.
-</p>
+<p>Authorized users can create and manage stock and ledger records. This data is used to track inventory, payments, dues and balances between the parties involved, and is visible only to users who are authorized to view it.</p>
 
 <h2>5. Adding, Updating and Deleting Records</h2>
-
-<p>
-  Users can add, update and delete records, such as users, shops,
-  products, stock and ledger entries, according to the permissions of
-  their role. Changes you make may be visible to other authorized users.
-  Some records may be retained for accounting, audit or legal reasons
-  even after deletion from the application.
-</p>
+<p>Users can add, update and delete records, such as users, shops, products, stock and ledger entries, according to the permissions of their role. Changes you make may be visible to other authorized users. Some records may be retained for accounting, audit or legal reasons even after deletion from the application.</p>
 
 <h2>6. Location Information</h2>
-
-<p>
-  Vijaya Foods may request access to your device location when required
-  for specific application functionality, such as shop visits or
-  delivery.
-</p>
-
-<p>
-  Location permission is requested through the device or browser
-  permission system. You may manage or revoke it through your device or
-  browser settings.
-</p>
+<p>Vijaya Foods may request access to your device location when required for specific application functionality, such as shop visits or delivery.</p>
+<p>Location permission is requested through the device or browser permission system. You may manage or revoke it through your device or browser settings.</p>
 
 <h2>7. How We Use Your Information</h2>
-
-<p>
-  We may use collected information for the following purposes:
-</p>
-
+<p>We may use collected information for the following purposes:</p>
 <ul>
   <li>To create and manage user accounts and roles.</li>
   <li>To authenticate users and keep accounts secure.</li>
@@ -258,116 +127,42 @@
 </ul>
 
 <h2>8. App (PWA), Cookies and Local Storage</h2>
-
-<p>
-  The Vijaya Foods PWA and website may store certain data on your device,
-  such as your login session, preferences and cached content, so that the
-  application loads faster and works better on slow connections.
-  We may also use essential cookies to keep you logged in.
-  You can clear this data or block cookies through your browser or device
-  settings, but some features may stop working.
-</p>
+<p>The Vijaya Foods PWA and website may store certain data on your device, such as your login session, preferences and cached content, so that the application loads faster and works better on slow connections. We may also use essential cookies to keep you logged in. You can clear this data or block cookies through your browser or device settings, but some features may stop working.</p>
 
 <h2>9. Notifications</h2>
-
-<p>
-  The application may send notifications related to orders, stock,
-  ledger updates and other important service updates.
-  You can manage notification permissions through your device or browser
-  settings.
-</p>
+<p>The application may send notifications related to orders, stock, ledger updates and other important service updates. You can manage notification permissions through your device or browser settings.</p>
 
 <h2>10. Data Security</h2>
-
-<p>
-  We take reasonable technical and organizational measures to protect
-  information against unauthorized access, alteration, disclosure, or
-  destruction. Access to data is controlled by user roles.
-</p>
-
-<p>
-  However, no method of electronic transmission or storage can be
-  guaranteed to be completely secure. Please keep your login details
-  private.
-</p>
+<p>We take reasonable technical and organizational measures to protect information against unauthorized access, alteration, disclosure, or destruction. Access to data is controlled by user roles.</p>
+<p>However, no method of electronic transmission or storage can be guaranteed to be completely secure. Please keep your login details private.</p>
 
 <h2>11. Data Sharing</h2>
-
-<p>
-  We do not sell your personal information.
-</p>
-
-<p>
-  Information may be shared with other authorized users of the
-  application as described in this policy, with service providers or
-  technology providers when necessary to operate, maintain, secure, or
-  improve the application, or when required by law.
-</p>
+<p>We do not sell your personal information.</p>
+<p>Information may be shared with other authorized users of the application as described in this policy, with service providers or technology providers when necessary to operate, maintain, secure, or improve the application, or when required by law.</p>
 
 <h2>12. Data Retention and Account Deletion</h2>
-
-<p>
-  We keep your information for as long as your account is active or as
-  needed to provide the service. When an account or record is deleted,
-  applicable information will be deleted or handled according to our
-  retention requirements, including accounting and legal obligations.
-</p>
+<p>We keep your information for as long as your account is active or as needed to provide the service. When an account or record is deleted, applicable information will be deleted or handled according to our retention requirements, including accounting and legal obligations.</p>
 
 <h2>13. Your Rights</h2>
-
-<p>
-  Subject to applicable law, you may ask to access, correct or delete
-  your personal information, or withdraw consent where applicable, by
-  contacting us using the details below.
-</p>
+<p>Subject to applicable law, you may ask to access, correct or delete your personal information, or withdraw consent where applicable, by contacting us using the details below.</p>
 
 <h2>14. Children's Privacy</h2>
-
-<p>
-  Vijaya Foods is a business application intended for adults and is not
-  directed toward children. We do not knowingly collect personal
-  information from children.
-</p>
+<p>Vijaya Foods is a business application intended for adults and is not directed toward children. We do not knowingly collect personal information from children.</p>
 
 <h2>15. Third-Party Services</h2>
-
-<p>
-  The application may use third-party services for functions such as
-  authentication, notifications, analytics, hosting, security, or other
-  technical services. Such services may process information according to
-  their respective privacy policies and applicable agreements.
-</p>
+<p>The application may use third-party services for functions such as authentication, notifications, analytics, hosting, security, or other technical services. Such services may process information according to their respective privacy policies and applicable agreements.</p>
 
 <h2>16. Changes to This Privacy Policy</h2>
-
-<p>
-  We may update this Privacy Policy from time to time to reflect changes
-  in the application, services, legal requirements, or privacy practices.
-  Any updated Privacy Policy will be published on this page with a
-  revised "Last updated" date.
-</p>
+<p>We may update this Privacy Policy from time to time to reflect changes in the application, services, legal requirements, or privacy practices. Any updated Privacy Policy will be published on this page with a revised "Last updated" date.</p>
 
 <h2>17. Contact Us</h2>
-
-<p>
-  If you have questions, concerns, or requests regarding this Privacy
-  Policy or your information, please contact the Vijaya Foods support
-  team:
-</p>
-
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or your information, please contact the Vijaya Foods support team:</p>
 <ul>
-  <li>Email: [support@yourdomain.com]</li>
-  <li>Phone: [+91 XXXXX XXXXX]</li>
-  <li>Address: [Registered office address, City, State - PIN]</li>
+  <li>Email: <a href="mailto:office@clienteltech.com">office@clienteltech.com</a></li>
 </ul>
 
-<div class="footer">
-  <p>
-    © 2026 Vijaya Foods. All rights reserved.
-  </p>
-</div>
+<footer>&copy; 2026 Vijaya Foods. All rights reserved.</footer>
 
-  </div>
-
+</main>
 </body>
 </html>
